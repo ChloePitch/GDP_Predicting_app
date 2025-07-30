@@ -10,13 +10,13 @@ st.header("🌍 Country GDP Prediction for 2025")
 st.markdown("---")
 
 # Load model and data
-with open("predicting_model.pkl", "rb") as f:
+with open("App/predicting_model.pkl", "rb") as f:
     data = pickle.load(f)
 
 models = data['models']
 metrics = data['metrics']
 df_gdp_2025 = data['predictions']
-df_pd = pd.read_csv("cleaned_GDP_data.csv")
+df_pd = pd.read_csv("App/cleaned_GDP_data.csv")
 
 features = ['Exports', 'Imports', 'GDP_Per_Capita', 'GNI', 'Life_Expectancy', 'Population']
 all_countries = sorted(df_pd['Country Name'].unique())
