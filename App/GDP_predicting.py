@@ -24,7 +24,7 @@ metrics2 = data2["metrics"]
 df_gdp_2025_2 = data2["predictions"]
 
 #Load cleaned data
-df_pd = pd.read_csv("cleaned_GDP_data.csv")
+df_pd = pd.read_csv("App/cleaned_GDP_data.csv")
 
 # Define features for each model
 features1 = ['Exports', 'Imports', 'GDP_Per_Capita', 'GNI', 'Life_Expectancy', 'Population']
