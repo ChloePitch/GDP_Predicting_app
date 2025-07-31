@@ -10,14 +10,14 @@ st.title("🌍 Country GDP and GDP Growth Prediction for 2025")
 st.markdown("---")
 
 #Load Model 1 (GDP Prediction)
-with open("predicting_model.pkl", "rb") as f1:
+with open('App/predicting_model.pkl', "rb") as f1:
     data1 = pickle.load(f1)
 models1 = data1["models"]
 metrics1 = data1["metrics"]
 df_gdp_2025_1 = data1["predictions"]
 
 #Load Model 2 (GDP Growth Prediction) 
-with open("gdp_growth_predicting_model.pkl", "rb") as f2:
+with open("App/gdp_growth_predicting_model.pkl", "rb") as f2:
     data2 = pickle.load(f2)
 models2 = data2["models"]
 metrics2 = data2["metrics"]
