@@ -107,7 +107,7 @@ if selected_countries:
                 r2_2 = metrics2[country]["R2"]
 
                 pred_growth_rows.append({"Country Name": country, "Year": 2025, "GDP_Growth_Rate": pred_growth})
-                st.write(f"**{country}** – 2025 GDP Growth Rate: **{pred_growth:.2f}%**")
+                st.write(f"**{country}** – 2025 GDP Growth Rate: **{pred_growth:.2f}%** | RMSE: `{rmse2:,.2f}` | R²: `{r2_2:.4f}`")
             except Exception as e:
                 st.error(f"Error in GDP Growth Rate prediction for {country}: {e}")
         else:
