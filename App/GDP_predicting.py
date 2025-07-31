@@ -28,7 +28,7 @@ df_pd = pd.read_csv("App/cleaned_GDP_data.csv")
 
 # Define features for each model
 features1 = ['Exports', 'Imports', 'GDP_Per_Capita', 'GNI', 'Life_Expectancy', 'Population']
-features2 = ['Exports', 'Imports', 'GDP_Per_Capita', 'GNI', 'Life_Expectancy', 'Population', 'GDP'] 
+features2 = ['Exports', 'Imports', 'GDP_Per_Capita', 'GNI', 'Life_Expectancy', 'Population']
 
 #Country selection 
 all_countries = sorted(df_pd['Country Name'].unique())
